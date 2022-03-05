@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--textColor);
+    font-size: 1em;
+} 
+
+:root {
+    --primary: #444953;
+    --secondary: #8c62be;
+    --tertiary: #5b616d;
+    --textColor: #e2e2e2;
+}
+
+body {
+    background-color: var(--tertiary);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 5px solid var(--secondary);
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-right: 3px solid var(--secondary);
+    text-shadow: 3px 3px var(--secondary);
+}
+
+header nav {
+    margin: 7px 10px;
+}
+
+header nav ul{
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid var(--secondary);
+    text-shadow: 3px 3px var(--secondary);
+    color: #ffffff;
+}
+
+.border-bottom {
+    border-bottom: 5px solid var(--secondary);
+}
+
+.section-content {
+    background-color: var(--primary);
+    display: flex;
+    height: 100%;
+    margin: 10px 50px;
+    border-radius: 10px;
+}
+
+.section-content h2 {
+    border: 3px solid var(--secondary);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 15px;
+    white-space: nowrap;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading h2{
+    font-size: 1.75em;
+    text-shadow: 3px 3px var(--secondary);
+}
+
+.section-text {
+    background-color: var(--primary);
+    text-align: justify;
+    margin: 20px 50px 20px 10px;
+    width: 100%;
+}
+
+.section-text p {
+    font-size: 1.5em;
+}
+
+.self-picture {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.self-picture img {
+    margin: 80px 15px;
+    border-radius: 20px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.section-images {
+    margin: 15px 25px 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-images img {
+    border: 3px solid var(--secondary);
+    border-radius: 10px;
+    opacity: 0.5;
+    width: 400px;
+    max-width: 100%;
+}
+
+.section-images img:hover {
+    opacity: 1;
+    width: auto;
+}
+
+.image-name {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact-form form {
+    width: 90%;
+}
+
+.contact-form input, .contact-form textarea{
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    display: block;
+    padding: 7px 16px;
+    width: 100%;
+    font-size: 1em;
+    background-color: #5b616d;
+    color: var(--textColor );
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: #e2e2e2;
+    color: black;
+    outline: none;
+}
+
+.contact-info {
+    padding-top: 20px;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.contact-info a {
+    text-shadow: 2px 2px var(--secondary);
+}
+
+.contact-form button {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #66468d;
+}
+
+footer {
+    background-color: var(--primary);
+    border-top: 5px solid var(--secondary);
+    height: 85px;
+}
+
+footer nav {
+    margin: 7px 10px;
+}
+
+footer nav ul{
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+footer nav ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    border-bottom: 2px solid var(--secondary);
+    text-shadow: 3px 3px var(--secondary);
+    color: #ffffff;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+    }
+
+    header h1 {
+        border-right: none;
+        border-bottom: 3px solid var(--secondary);
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    .section-text {
+        margin: 0;
+    }
+
+    .section-content {
+        justify-content: center;
+    }
+
+    .section-heading {
+        text-align: center;
+    }
+
+    .section-heading h2 {
+        border: none;
+        border-bottom: 3px solid var(--secondary);
+        justify-content: center;
+        height: auto;
+        display: block;
+    }
+    
+    .contact-info {
+        padding-bottom: 20px;
+    }
+
+    .section-content {
+        display: block;
+        padding-left: 30px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
